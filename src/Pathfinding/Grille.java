@@ -69,4 +69,15 @@ public class Grille {
         return x >= 0 && x < largeur && y >= 0 && y < hauteur;
     }
 
+    //Point de peche :
+    public void placerPointDePeche(int x, int y) {
+        Noeud pointDePeche = getNoeud(x, y);
+        pointDePeche.setObstacle(true); // Marquer le nœud comme un obstacle (point de pêche)
+    }
+
+    public boolean ouEstPointDePeche(int x, int y) {
+        Noeud noeud = getNoeud(x, y);
+        return noeud != null && noeud.estObstacle();
+    }
+
 }
