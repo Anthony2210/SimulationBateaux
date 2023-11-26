@@ -72,10 +72,10 @@ public class BateauxPecheurs extends Bateau {
     }
 
 
-    /*public void seDeplacerVersPointDePeche(List<PointDePeche> pointsDePeche, Grille grille) {
+    public void seDeplacerVersPointDePeche(List<PointDePeche> pointsDePeche, Grille grille) {
         if (!pointsDePeche.isEmpty()) {
             PointDePeche pointCible = trouverPointDePecheLePlusProche(pointsDePeche);
-            seDeplacerVersDestination(pointCible.getPosition(), grille);
+
         } else {
             System.out.println("Bateau " + getNumeroBateau() + ": Aucun point de pêche disponible.");
         }
@@ -107,7 +107,7 @@ public class BateauxPecheurs extends Bateau {
     private double calculerDistance(Point pointDePeche) {
         // Utilisez la méthode Point.distance pour calculer la distance entre deux points
         return position.distance(pointDePeche);
-    }*/
+    }
     @Override
     public String toString() {
         return "BateauxPecheurs n°" + numeroBateau +
